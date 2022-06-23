@@ -1,5 +1,18 @@
-﻿header,body,.navbar,.video-contanier, .video-title,aside{
+﻿header {
+    color: black;
+    padding-left: 1%;
+    padding-top: 1.2%;
+}
+#header-index {
+    color:#00ff21ff;
+}
+header,body,.navbar,.video-contanier, .video-title,aside{
     font-family:'Comic Sans MS';
+}
+
+
+header, body,  .video-contanier, .video-title, aside {
+    background-color:antiquewhite;
 }
 
 .bordered {
@@ -20,7 +33,9 @@
     color: aliceblue;
   
 }
-
+.inp {
+    margin: 20px 5px;
+}
 .video-title {
     font-size: 22px;
     color: red;
@@ -29,6 +44,8 @@
 footer {
     position: absolute;
     bottom: 0;
+    line-height: 66%;
+    margin-left:25px;
 }
 
 aside {

@@ -1,0 +1,48 @@
+﻿header,body,.navbar,.video-contanier, .video-title,aside{
+    font-family:'Comic Sans MS';
+}
+
+.bordered {
+    border: 2px solid black;
+    background-color: azure;
+    padding: 10px;
+}
+
+.video-contanier {
+    display: inline-block;
+}
+
+.navbar {
+    color: darkgray;
+    padding-left: 15%;
+}
+.navbar:hover {
+    color: aliceblue;
+  
+}
+
+.video-title {
+    font-size: 22px;
+    color: red;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+aside {
+    height: 100%;
+    width: 10%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+body {
+    padding-left: 11%;
+}

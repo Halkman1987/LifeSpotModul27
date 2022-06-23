@@ -2,9 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>LifeSpot</title>
+    <title>LifeSpot - Весь Мир как на ладони !!!</title>
+    <style>
+        .bordered{
+            border: 2px solid black;
+            background-color:azure;
+            padding:10px;
+        }
+        .video-contanier{
+            display:inline-block;
+        }
+        .navbar{
+            color:darkgray;
+            padding-left:15%;
+        }
+        .video-title{
+
+        }
+        footer{
+            position:absolute;
+            bottom:0;
+        }
+        aside{
+            height:100%;
+            width:10%;
+            position:absolute;
+            z-index:1;
+            top:0;
+            left:0;
+            background-color:#111;
+            overflow-x:hidden;
+            padding-top:20px;
+        }
+        body{
+            padding-left:11%;
+        }
+
+    </style>
 </head>
 <body>
-    <p>Приветствуем на LifeSpot!</p>
+    <header>
+        <h1>
+            Выберите куда будем смотреть !
+        </h1>
+        <!--<p>Приветствуем на LifeSpot!</p>-->
+        <p>
+            Ниже представленны камеры с улич для наблюдения
+        </p>
+    </header>
+    
+    
+    <aside id="sidebar">
+        <div class="navbar">
+            <p>All translations</p>
+            <p>Project</p>
+
+        </div>
+    </aside>
+    
+    
+    <div class="bordered">
+       
+
+        <!--Кнопки-->
+        <button>Санкт-Петербург</button>
+        <button>Нью-йорк</button>
+        <button>Лондон</button>
+
+
+        <!-- Ссылки на видео из ютюба -->
+        <!-- <a href="https://www.youtube.com/watch?v=wCcMcaiRbhM"><button>Санкт-Петербург</button></a>
+    <a href="https://www.youtube.com/watch?v=srlpC5tmhYs"><button>Нью-Йорк</button></a>
+    <a href="https://www.youtube.com/watch?v=JplMzss6_YE&ab_channel=WokiliWanders"><button>Лондон</button></a>-->
+
+        <div class="video-contanier">
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="video-title">New-york</h3>
+        </div>
+        
+        <div class="video-contanier">
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JplMzss6_YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="video-title">London</h3>
+        </div>
+
+
+    </div>
+    <footer >
+        <p>LifeSpot - All rights reserved</p>
+        <p> Callback 45645645643564</p>
+    </footer>
 </body>
 </html>

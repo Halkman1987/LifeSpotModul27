@@ -1,5 +1,4 @@
-﻿
-let aGe = prompt("Enter your age");
+﻿let aGe = prompt("Enter your age");
 
         if (aGe >=18)
 {
@@ -8,7 +7,7 @@ let aGe = prompt("Enter your age");
         else
 {
         alert("So sorry...you little");
-        window.location.href = "http://www.google.com";
+        window.location.href = "http://www.google.com"
 
 }
 

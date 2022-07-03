@@ -5,24 +5,25 @@
 
     <title>LifeSpot - Весь Мир как на ладони !!!</title>
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css" />
-
-   
     <script type="text/javascript" src="../Static/JS/index.js"></script>
-   <!-- <script>
+    <script>
+        getOld();
+    </script>
+    <!-- <script>
 
-let aGe = prompt("Enter your age");
+    let aGe = prompt("Enter your age");
 
-        if (aGe >=18)
-{
-        alert("Hello man !");
-}
-        else
-{
-        alert("So sorry...you little");
-        window.location.href = "http://www.google.com"
+            if (aGe >=18)
+    {
+            alert("Hello man !");
+    }
+            else
+    {
+            alert("So sorry...you little");
+            window.location.href = "http://www.google.com"
 
-}
-    </script>-->
+    }
+        </script>-->
     <!-- <script>
          alert("Приветствуем на странице : " + new Date().toLocaleString());
      </script>-->
@@ -73,50 +74,68 @@ let aGe = prompt("Enter your age");
         <p>
             Ниже представленны камеры с улиц для наблюдения
         </p>
-        
-        <input class="inp" type="text" size="50">
+        <!--<input class="inp" type="text" oninput="
+
+               let inputString=document.getElementsByTagName('input')[0].value.toLowerCase();
+
+               let elements=document.getElementsByClassName('video-contanier');
+
+               for (let i=0; i <= elements.length; i++)
+        {
+        let videoText = elements[i].querySelector(".video-title").innerText;
+
+        if(!videoText.toLowerCase().includes(inputString.toLowerCase()))
+        {
+        elements[i].style.display = 'none';
+        }
+        else
+        {
+        elements[i].style.display = 'inline-block';
+        }
+        }
+        " size="50%">-->
+        <input class="inp" oninput="lookUp()"  size="50%">
+
+
+       
     </header>
-    
-    
+
+
     <aside id="sidebar">
         <div class="navbar">
             <a href="/"> <p>All translations</p></a>
             <a href="/"> <p>Project</p></a>
-           
-
         </div>
     </aside>
-    
-    
-    <div class="bordered">
-       
 
+
+    <div class="bordered">
         <!--Кнопки-->
-       <!-- <button>Санкт-Петербург</button>
+        <!-- <button>Санкт-Петербург</button>
         <button>Нью-йорк</button>
         <button>Лондон</button>-->
-
-
         <!-- Ссылки на видео из ютюба -->
         <!-- <a href="https://www.youtube.com/watch?v=wCcMcaiRbhM"><button>Санкт-Петербург</button></a>
-    <a href="https://www.youtube.com/watch?v=srlpC5tmhYs"><button>Нью-Йорк</button></a>
-    <a href="https://www.youtube.com/watch?v=JplMzss6_YE&ab_channel=WokiliWanders"><button>Лондон</button></a>-->
+        <a href="https://www.youtube.com/watch?v=srlpC5tmhYs"><button>Нью-Йорк</button></a>
+        <a href="https://www.youtube.com/watch?v=JplMzss6_YE&ab_channel=WokiliWanders"><button>Лондон</button></a>-->
 
         <div class="video-contanier">
-            
             <iframe width="560" height="315" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h3 class="video-title">New-york</h3>
         </div>
-        
-        <div class="video-contanier">
 
+        <div class="video-contanier">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/JplMzss6_YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h3 class="video-title">London</h3>
         </div>
 
+        <div class="video-contanier">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bnrIzrahjXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="video-title">Lensk</h3>
+        </div>
 
     </div>
-    <footer >
+    <footer>
         <p>LifeSpot - All rights reserved</p>
         <p> Callback 45645645643564</p>
     </footer>

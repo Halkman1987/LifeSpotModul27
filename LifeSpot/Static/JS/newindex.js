@@ -1,6 +1,25 @@
-﻿function setTimeout(() =>
-    alert("Нравится LifeSpot? " + '\n' + "Подпишитесь на наш Instagram @lifespot999!"),
-    30000);
+﻿function getOld() {
+    let session = new Map();
+    session.set("userAgent", window.navigator.userAgent);
+    session.set("age", prompt("Пожалуйста, введите ваш возраст?"));
+
+    if (session.get("age") >= 18) {
+        let startDate = new Date().toLocaleString();
+
+        alert("Приветствуем на LifeSpot! " + '\n' + "Текущее время: " + startDate);
+        session.set("startDate", startDate);
+    }
+    else {
+        alert("Наши трансляции не предназначены для лиц моложе 18 лет. Вы будете перенаправлены");
+        window.location.href = "http://www.google.com";
+        // a = true + 20 + "name";
+    }
+
+    // Вывод в консоль
+    for (let result of session) {
+        console.log(result)
+    }
+}
 
 function lookUp() {
     // Сохраняем текст пользовательского запроса.
@@ -25,23 +44,3 @@ function lookUp() {
 
 }
 
-
-
-
-
-
-function nameGet() {
-    let name = prompt("Enter you Name :");
-    alert(` Hello bro ${name} . In you name ${name.length} sumbols`)
-}
-
-
-let elements = document.getElementsByTagName('*');
-alert(`How much elements ${elements.length}`);
-
-function lookEnter() {
-    let elements = document.getElementsByTagName('input');
-    let element = elements[0];
-    let elementText = element.value;
-    alert(elementText)
-}
